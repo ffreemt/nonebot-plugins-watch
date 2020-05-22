@@ -9,7 +9,7 @@ hot plug and remove nonebot plugins
 
 Validate installation
 ```
-python -c "import nbpugins_watch; print(nbpugins_watch.__version__)"
+python -c "import nbplugins_watch; print(nbplugins_watch.__version__)"
 0.0.1
 ```
 
@@ -24,15 +24,15 @@ import nonebot
 nonebot.load_builtin_plugins()  # optioinal
 
 plugin_dir_path = r"path_to_plugin_dir"  # absolute or relative path
-from nbpugins_watch import nbpugins_watch
-nbpugins_watch(plugin_dir_path)
+from nbplugins_watch import nbplugins_watch
+nbplugins_watch(plugin_dir_path)
 
 nonebot.run()
 
 ```
 Create a file, say fancy_plugin.py, in the directory above. Edit and test and/or remove the file fancy_plugin.py to your heart's content.
 
-Note: if a plugin file contains syntax errors (as opposed to logic errors), you'll have to restart nonebot, in other words, nbpugins_watch will cease to work after an uncaught error.
+Note: if a plugin file contains syntax errors (as opposed to logic errors), you'll have to restart nonebot, in other words, nbplugins_watch will cease to work after an uncaught error.
 
 ### Acknowledgments
 
