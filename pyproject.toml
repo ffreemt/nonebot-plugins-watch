@@ -1,6 +1,6 @@
 [tool.poetry]
-name = "nbplugins_watch"
-version = "0.0.1"
+name = "nbplugins-watch"
+version = "0.0.2"
 description = "watch and (re)load plugins from a directory"
 authors = ["ffreemt"]
 
