@@ -21,7 +21,7 @@ Monitor the directory in your nonebot runner file, e.g. in  `my_nonebot.py`:
 
 import nonebot
 
-nonebot.load_builtin_plugins()  # optioinal
+nonebot.load_builtin_plugins()  # optional
 
 plugin_dir_path = r"path_to_plugin_dir"  # absolute or relative path
 from nbplugins_watch import nbplugins_watch
