@@ -32,7 +32,7 @@ nonebot.run()
 ```
 Create a file, say fancy_plugin.py, in the directory above. Edit and test and/or remove the file fancy_plugin.py to your heart's content.
 
-Note: if a plugin file contains syntax error (as opposed to logic error), you'll have to restart nonebot, in other words, nbpugins_watch will cease to work after an uncaught error.
+Note: if a plugin file contains syntax errors (as opposed to logic errors), you'll have to restart nonebot, in other words, nbpugins_watch will cease to work after an uncaught error.
 
 ### Acknowledgments
 
