@@ -14,7 +14,7 @@ python -c "import nbplugins_watch; print(nbplugins_watch.__version__)"
 ```
 
 ### Usage
-Make a directory somewhere and place an empty __init__.py in it.
+Make a directory somewhere and place an empty \_\_init\_\_.py in it.
 
 Monitor the directory in your nonebot runner file, e.g. my_nonebot.py:
 ```python
