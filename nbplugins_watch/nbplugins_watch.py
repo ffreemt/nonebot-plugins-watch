@@ -1,17 +1,18 @@
 r""" watch a directory and reload preset plugins.
 
 """
+# pylint: disable=invalid-name
 
 import asyncio
 from pathlib import Path
+from time import sleep
 import concurrent
 
-from nonebot import on_command, CommandSession, plugin
+from nonebot import plugin
 
 # from watchgod import awatch
 # from watchgod import PythonWatcher as awatch
 from watchgod import watch
-from time import sleep
 
 import logzero
 from logzero import logger
@@ -103,6 +104,8 @@ def _watch_n_reload(watch_dir: str = ""):
         sleep(2)
 
     logger.debug("end of watchgod -- this will only materialize when _watch_n_reload.flag is set to True.")
+
+    return None
 
 
 # def watch_n_reload(watch_dir: str = ""):

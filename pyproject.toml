@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "nbplugins-watch"
-version = "0.0.4-alpha.0"
+version = "0.0.4"
 description = "watch and (re)load plugins from a directory"
 authors = ["ffreemt"]
 readme = "README.md"
@@ -13,6 +13,7 @@ nonebot = "^1.6.0"
 watchgod = "^0.6"
 logzero = "^1.5.0"
 pytest-cov = "^2.8.1"
+pylint = "^2.5.2"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
