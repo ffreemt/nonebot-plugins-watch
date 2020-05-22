@@ -1,8 +1,11 @@
 [tool.poetry]
 name = "nbplugins-watch"
-version = "0.0.3"
+version = "0.0.4-alpha.0"
 description = "watch and (re)load plugins from a directory"
 authors = ["ffreemt"]
+readme = "README.md"
+homepage = "https://github.com/ffreemt/nonebot-plugins-watch"
+repository = "https://github.com/ffreemt/nonebot-plugins-watch"
 
 [tool.poetry.dependencies]
 python = "^3.7"
