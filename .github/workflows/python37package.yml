@@ -31,8 +31,7 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=14  --ignore=E501,F401 --statistics
     - name: Test with pytest
       run: |
-        pip install pytest
-        pytest
+        poetry run pytest
     - name: Build Python package
       run: |
         pip install poetry
