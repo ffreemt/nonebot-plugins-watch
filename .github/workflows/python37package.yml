@@ -34,5 +34,4 @@ jobs:
         poetry run pytest
     - name: Build Python package
       run: |
-        pip install poetry
-        poetry buid
+        poetry build
