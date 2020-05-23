@@ -24,7 +24,7 @@ COUNT = 0
 
 
 def _watch_n_reload(watch_dir: str = ""):
-    """ watch and reaload plugins in a directory.
+    """ watch and reload plugins in a directory.
 
     Default to the current directory
     """
@@ -159,8 +159,8 @@ def nbplugins_watch(watch_dir: str = ""):
 
     executor = concurrent.futures.ThreadPoolExecutor(max_workers=2)
     loop = asyncio.get_event_loop()
-    # attempt get a loop in case the loop above is not available
-    # for example in ipython
+    # attempt to get a loop in case the loop above is 
+    # not available, for example in ipython
     if loop.is_closed():
         loop = asyncio.new_event_loop()
     try:
