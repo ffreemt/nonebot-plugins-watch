@@ -7,7 +7,7 @@ hot plug and remove nonebot plugins
 
 ```pip install nbplugins-watch```
 
-Validate installation
+To validate installation
 ```
 python -c "import nbplugins_watch; print(nbplugins_watch.__version__)"
 0.0.1

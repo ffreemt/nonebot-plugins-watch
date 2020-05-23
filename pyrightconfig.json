@@ -1,11 +1,11 @@
 {
     "typingsPath": "src/typestubs",
-    "venvPath": "/Python/Python36",
+    "venvPath": ".venv",
 
     "reportTypeshedErrors": false,
     "reportMissingImports": true,
     "reportMissingTypeStubs": false,
 
-    "pythonVersion": "3.6",
+    "pythonVersion": "3.7",
     "pythonPlatform": "Windows"
 }
