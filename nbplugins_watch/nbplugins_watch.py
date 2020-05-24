@@ -17,17 +17,21 @@ from watchgod import watch
 
 import logzero
 from logzero import logger
-logzero.loglevel(10)
 
 CURDIR = Path().absolute().__str__()
 COUNT = 0
 
 
-def _watch_n_reload(watch_dir: str = ""):
+def _watch_n_reload(watch_dir: str = "", debug: bool = True):
     """ watch and reload plugins in a directory.
 
     Default to the current directory
     """
+
+    if debug:
+        logzero.loglevel(10)
+    else:
+        logzero.loglevel(20)
 
     _watch_n_reload.flag = False  # break flag
 
@@ -139,11 +143,16 @@ def _watch_n_reload(watch_dir: str = ""):
 
 
 # def watch_n_reload(watch_dir: str = ""):
-def nbplugins_watch(watch_dir: str = ""):
+def nbplugins_watch(watch_dir: str = "", debug: bool = False):
     """ watch and reaload plugins in a directory.
 
     Default to the current directory
     """
+
+    if debug:
+        logzero.loglevel(10)
+    else:
+        logzero.loglevel(20)
 
     try:
         # stop a possible previou watch_god
@@ -159,11 +168,11 @@ def nbplugins_watch(watch_dir: str = ""):
 
     executor = concurrent.futures.ThreadPoolExecutor(max_workers=2)
     loop = asyncio.get_event_loop()
-    # attempt to get a loop in case the loop above is 
+    # attempt to get a loop in case the loop above is
     # not available, for example in ipython
     if loop.is_closed():
         loop = asyncio.new_event_loop()
     try:
-        loop.run_in_executor(executor, lambda: _watch_n_reload(watch_dir))
+        loop.run_in_executor(executor, lambda: _watch_n_reload(watch_dir, debug))
     except Exception as exc:
         logger.error("loop.run_in_executor exc: %s", exc)
