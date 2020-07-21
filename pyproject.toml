@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "nbplugins-watch"
-version = "0.0.5"
-description = "watch and (re)load plugins from a directory"
+version = "0.0.6-alpha.0"
+description = "watch and (re)load/remove nonebot plugins from a directory"
 authors = ["ffreemt"]
 readme = "README.md"
 homepage = "https://github.com/ffreemt/nonebot-plugins-watch"
