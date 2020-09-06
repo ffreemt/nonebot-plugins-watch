@@ -1,4 +1,4 @@
-r""" watch a directory and reload preset plugins.
+r""" watch a directory and reload preset nonebotplugins.
 
 """
 # pylint: disable=invalid-name
@@ -22,7 +22,11 @@ CURDIR = Path().absolute().__str__()
 COUNT = 0
 
 
-def _watch_n_reload(watch_dir: str = "", debug: bool = True):
+# fmt: off
+def _watch_n_reload(
+        watch_dir: str = "", debug: bool = True
+):  # pylint: disable=too-many-branches, too-many-statements
+    # fmt: on
     """ watch and reload plugins in a directory.
 
     Default to the current directory
@@ -55,7 +59,9 @@ def _watch_n_reload(watch_dir: str = "", debug: bool = True):
     # make sure it's a package (__init__.py present)
     if not (_ / "__init__.py").exists():
         logger.error(" __init__.py not present in %s", _)
-        logger.info("You need to place an __init__.py in the directory. Exiting... not watching the directory...")
+        logger.info(
+            "You need to place an __init__.py in the directory. Exiting... not watching the directory..."
+        )
         return None
 
     # append p_dir to sys.path if not already in sys.path
@@ -135,7 +141,9 @@ def _watch_n_reload(watch_dir: str = "", debug: bool = True):
         # await asyncio.sleep(5)
         sleep(2)
 
-    logger.debug("end of watchgod -- this will only materialize when _watch_n_reload.flag is set to True.")
+    logger.debug(
+        "end of watchgod -- this will only materialize when _watch_n_reload.flag is set to True."
+    )
 
     _watch_n_reload.watching = False
 
