@@ -26,7 +26,7 @@ import nonebot
 from nbplugins_watch import nbplugins_watch
 
 nonebot.load_builtin_plugins()  # optional
-nonebot.load_builtin_plugins("mature-plugin-dir")
+nonebot.load_plugins("mature-plugins-dir")  # optional
 
 plugin_dir_path = r"path_to_plugin_dir"  # absolute or relative path
 
