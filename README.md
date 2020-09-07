@@ -31,8 +31,8 @@ nonebot.load_plugins("mature_plugins", "mature_plugins")  # optional
 plugin_dir_path = r"path_to_plugin_dir"  # absolute or relative path
 
 nbplugins_watch(plugin_dir_path)
-# turn debug on to see what's going on
-# nbplugins_watch(plugin_dir_path, debug=True)
+# turn annoying debug messages off
+# nbplugins_watch(plugin_dir_path, debug=False)
 
 nonebot.run()
 
