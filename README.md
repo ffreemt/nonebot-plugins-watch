@@ -39,7 +39,7 @@ nonebot.run()
 ```
 Create a file, say fancy_plugin.py if not already there, in the directory above. Edit and test and/or remove the file fancy_plugin.py to your heart's content.
 
-Note: currently if you create a new file, you need to modify the file at least once. Hopefully this can be fixed a future versoin.
+Note: currently if you create a new file, you need to modify the file at least once. Hopefully this can be fixed in a future versoin.
 
 ### Acknowledgments
 
