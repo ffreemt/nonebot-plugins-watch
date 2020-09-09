@@ -7,14 +7,14 @@
 ([English README.md](https://github.com/ffreemt/nonebot-plugins-watch/blob/master/README.md))
 
 
-运行该插件可监视某个目录，目录里文件更新或被移除时就会自动载入对应更新的文件的插件或移除对应的插件（无需重启nonebot），应用场景为开发或调试新`nonebot`插件。
+运行`nbplugins-watch`可监视某个目录，目录里文件更新或被移除时`nonebot`就会自动载入对应更新文件的插件或移除对应的插件（无需重启`nonebot`），应用场景为开发或调试新`nonebot`插件。
 
 ### 安装
 
 ```pip install nbplugins-watch -U```
 
 ### Usage
-开个目录并置入 \_\_init\_\_.py 以及插件文件.
+开个目录并置入 \_\_init\_\_.py 以及插件文件。
 
 在`my_nonebot.py`文件里监控此目录, 例如 `my_nonebot.py`:
 ```python
@@ -23,7 +23,7 @@ import nonebot
 from nbplugins_watch import nbplugins_watch
 
 nonebot.load_builtin_plugins()  # 可选
-nonebot.load_plugins("mature_plugins", "mature_plugins")  # 可用插件目录
+nonebot.load_plugins("mature_plugins", "mature_plugins")  # 可用插件目录，可选
 
 plugin_dir_path = r"path_to_plugin_dir"  # 开发插件目录绝对或相对路径
 
