@@ -2,9 +2,9 @@
 ![Python3.7 package](https://github.com/ffreemt/nonebot-plugins-watch/workflows/Python3.7%20package/badge.svg) [![codecov](https://codecov.io/gh/ffreemt/nonebot-plugins-watch/branch/master/graph/badge.svg)](https://codecov.io/gh/ffreemt/nonebot-plugins-watch)
  [![PyPI version](https://badge.fury.io/py/nbplugins-watch.svg)](https://badge.fury.io/py/nbplugins-watch)
 
-
-
 hot plug and remove nonebot plugins
+
+([中文 README-zh.md](https://github.com/ffreemt/nonebot-plugins-watch/blob/master/README-zh.md))
 
 ### Installation
 
