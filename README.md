@@ -37,9 +37,9 @@ nbplugins_watch(plugin_dir_path)
 nonebot.run()
 
 ```
-Create a file, say fancy_plugin.py if not already there, in the directory above. Edit and test and/or remove the file fancy_plugin.py to your heart's content.
+Create a file, say fancy_plugin.py if not already there, in the watch-directory (specified by `path_to_plugin_dir`) above. Edit and test and/or remove the file fancy_plugin.py to your heart's content.
 
-Note: currently if you copy a new file to the directory, you need to modify the file at least once to effect a certain plugin. Hopefully this can be fixed in a future version.
+Note: currently in order to effect a certain plugin alerady in the watch-directory (specified by `path_to_plugin_dir`), you need to modify the file at least once, e.g., `touch file1.py`. Hopefully this can be fixed in a future version.
 
 ### Acknowledgments
 
