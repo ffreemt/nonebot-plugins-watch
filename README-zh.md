@@ -17,8 +17,7 @@
 开个目录并置入 \_\_init\_\_.py 以及插件文件。
 
 在`my_nonebot.py`文件里监控此目录, 例如 `my_nonebot.py`:
-```python
-
+```python hl_lines="2,7,9"
 import nonebot
 from nbplugins_watch import nbplugins_watch
 
@@ -28,7 +27,7 @@ nonebot.load_plugins("mature_plugins", "mature_plugins")  # 可用插件目录�
 plugin_dir_path = r"path_to_plugin_dir"  # 开发插件目录绝对或相对路径
 
 nbplugins_watch(plugin_dir_path)
-# 关掉纠错信息
+# 关掉日志里烦人的纠错信息
 # nbplugins_watch(plugin_dir_path, debug=False)
 
 nonebot.run()
