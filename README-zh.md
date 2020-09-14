@@ -17,7 +17,7 @@
 开个目录并置入 \_\_init\_\_.py 以及插件文件。
 
 在`my_nonebot.py`文件里监控此目录, 例如 `my_nonebot.py`:
-```python hl_lines="2,7,9"
+```python hl_lines="2 7 9"
 import nonebot
 from nbplugins_watch import nbplugins_watch
 
